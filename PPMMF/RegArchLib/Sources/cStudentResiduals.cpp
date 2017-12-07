@@ -66,7 +66,9 @@ namespace RegArchLib {
     }
     
     double cStudentResiduals::clogDensity(double d) {
-        //TODO
+        double k = 3; //c'est un paramètre de la loi de Student à déterminer (ou mettre en paramètre?) 
+        //return (1/sqrt(k*PI))*(Gamma((k+1)/2)/Gamma(k/2))pow((1 + d*d/k),-(k+1)/2);
+        // TODO ecrire la fonction Gamma et mettre k en argument (ou savoir s'il est fixé dans l'énoncé)
         return 0;
     }
     

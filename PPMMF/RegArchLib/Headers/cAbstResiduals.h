@@ -18,7 +18,7 @@ namespace RegArchLib {
         cDVector mParams;
     public:
         cAbstResiduals(uint theNParams = 0) ; ///< A simple constructor
-	cAbstResiduals(const cDVector& theParams) ; ///< Another constructor
+		cAbstResiduals(const cDVector& theParams) ; ///< Another constructor
 	virtual ~cAbstResiduals() ;  ///< A simple destructor
 	void Delete(void) ; ///< Free memory
 	void Print(ostream& theOut=cout) const ; ///< Print the parameters
