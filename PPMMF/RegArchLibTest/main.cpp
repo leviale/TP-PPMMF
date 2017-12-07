@@ -53,8 +53,25 @@ int main(int argc, char** argv) {
     /* Création des données */
     cRegArchValue myValue();
     
-    /* Simulation des Yt */
-    //myModel.mSimulate(myValue, 20);
+    /* Opérateur égal du cCondMean */ 
+    cCondMean myCondMeanCopy();
+    myCondMeanCopy = myCondMean;
+    
+    
+    
+    /* Simulation des Yt *
+    double result;
+    result = myModel.mSimulate(myValue, 20);
+    std::cout<<result;
+    
+    /* Affichage du Yt simulé depuis RegArchValue */
+    std::cout << myValue.getmYt(20);
+    
+    /* Copie du cRegArchModel */
+    cRegArchModel myModelCopy();
+    myModelCopy = myModel.mCopy(); // Ici il faudra probablement surcharger l'opérateur égal pour que ça marche (je ne peux pas tester au Starbucks...)
+    
+    
     return 0;
 }
 

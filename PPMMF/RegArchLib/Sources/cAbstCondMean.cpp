@@ -19,5 +19,9 @@ namespace RegArchLib {
         mParams = theParams;
         MESS_CREAT("cAbstCondMean")
     }
+
+  double cAbstCondMean::mComputeMean(const cRegArchValue &data, int t){
+    
+  }
 }
 

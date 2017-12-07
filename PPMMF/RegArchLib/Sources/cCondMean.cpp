@@ -75,7 +75,13 @@ namespace RegArchLib {
         
         for (int i = 0; i < mMeans.size(); i++) {
             theMeans.mMeans[i] = mMeans[i]->mPtrCopy();
-        }    
+        }
+	return theMeans;
+    }
+
+    cCondMean& cCondMean::operator= (const cCondMean& copy) {
+        this.mMeans = copy->mCopy();
+        return *this;
     }
 }
 

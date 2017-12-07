@@ -30,10 +30,11 @@ namespace RegArchLib {
 	void ReAlloc(const std::vector<cAbstCondMean*>& theVectParam) ; ///< Allocation of the model parameters
 	void Set(cAbstCondMean* theMean, uint theIndex=0) ; ///< Set model parameters.
 	void Set(const std::vector<cAbstCondMean*>& theVectParam) ; ///< Set model parameters.
-        cAbstCondMean* Get(uint theIndex);
+         cAbstCondMean* Get(uint theIndex);
 	uint GetNParam(void) const ;
         double mComputeMean(const cRegArchValue &data, int t) const;
         cCondMean* mCopy() const;
+        cCondMean& operator= (const cCondMean& copy);
     };
 }
 
