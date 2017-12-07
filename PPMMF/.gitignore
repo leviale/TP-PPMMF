@@ -1,0 +1,9 @@
+/RegArchLib/build/
+Error/nbproject/private/
+RegArchLib/.dep.inc
+Tests/nbproject/private/
+VectorAndMatrix/nbproject/private/
+
+/RegArchLib/dist/
+/RegArchLibTest/build/
+/RegArchLibTest/dist/
